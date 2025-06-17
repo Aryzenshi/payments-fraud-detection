@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fraud Detection System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        AI-Powered Fraud Detection
+                        <span class="gradient-text">for Online Payments</span>
+                    </h1>
+                    <p class="hero-description">
+                        Advanced machine learning algorithms to detect and prevent fraudulent transactions in real-time
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="{{ url_for('predict_form') }}" class="btn btn-primary">Start Detection</a>
+                        <a href="{{ url_for('about_page') }}" class="btn btn-secondary" target="_blank">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="ml-visualization">
+                        <div class="neural-network">
+                            <div class="node-layer">
+                                <div class="node"></div>
+                                <div class="node"></div>
+                                <div class="node"></div>
+                            </div>
+                            <div class="node-layer">
+                                <div class="node"></div>
+                                <div class="node"></div>
+                                <div class="node"></div>
+                                <div class="node"></div>
+                            </div>
+                            <div class="node-layer">
+                                <div class="node"></div>
+                                <div class="node"></div>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-card">💳</div>
+                            <div class="floating-shield">🛡️</div>
+                            <div class="floating-chart">📊</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

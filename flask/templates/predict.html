@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Prediction - AI Fraud Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main-content">
+        <div class="predict-section">
+            <div class="container">
+                <div class="predict-header">
+                    <h1 class="page-title">Fraud Detection Analysis</h1>
+                    <p class="page-description">Enter transaction details to analyze fraud probability</p>
+                </div>
+
+                <div class="predict-container">
+                    <form class="predict-form" method="POST" action="{{ url_for('predict') }}">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="step">Step</label>
+                                <input type="number" id="step" name="step" required>
+                                <span class="form-hint">Represents a unit of time when the transaction occurred</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="type">Type</label>
+                                <select id="type" name="type" required class="select-placeholder">
+                                    <option value="" selected disabled>-- SELECT A TYPE --</option>
+                                    <option value="0">CASH-IN</option>
+                                    <option value="1">CASH-OUT</option>
+                                    <option value="2">DEBIT</option>
+                                    <option value="3">PAYMENT</option>
+                                    <option value="4">TRANSFER</option>
+                                </select>
+                                <span class="form-hint">Type of online transaction</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="amount">Amount</label>
+                                <input type="number" id="amount" name="amount" step="0.01" required>
+                                <span class="form-hint">The amount of the transaction</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="oldbalanceOrg">Origin Old Balance</label>
+                                <input type="number" id="oldbalanceOrg" name="oldbalanceOrg" step="0.01" required>
+                                <span class="form-hint">Balance before the transaction</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="newbalanceOrig">Origin New Balance</label>
+                                <input type="number" id="newbalanceOrig" name="newbalanceOrig" step="0.01" required>
+                                <span class="form-hint">Balance after the transaction</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="oldbalanceDest">Destination Old Balance</label>
+                                <input type="number" id="oldbalanceDest" name="oldbalanceDest" step="0.01" required>
+                                <span class="form-hint">Initial balance of recipient before transaction</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="newbalanceDest">Destination New Balance</label>
+                                <input type="number" id="newbalanceDest" name="newbalanceDest" step="0.01" required>
+                                <span class="form-hint">New balance of recipient after transaction</span>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <span class="btn-icon">🔍</span>
+                                Analyze Transaction
+                            </button>
+                            <button type="reset" class="btn btn-secondary">Reset Form</button>
+                            <a href="{{ url_for('home') }}" class="btn btn-secondary">Go Home</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
