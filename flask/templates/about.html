@@ -13,10 +13,10 @@
             <div class="container">
                 <div class="about-header">
                     <h1 class="page-title">About Our System</h1>
-                    <p class="page-description">Understanding the technology behind fraud detection</p>
                 </div>
 
                 <div class="about-content">
+
                     <div class="content-card">
                         <div class="card-header">
                             <h2>Project Objective</h2>
@@ -37,27 +37,32 @@
                             <div class="card-icon">🤖</div>
                         </div>
                         <div class="card-content">
-                            <p>We employ multiple state-of-the-art classification algorithms to ensure maximum accuracy:</p>
+                            <p>We compared the performance of five advanced classification algorithms to identify the most effective model:</p>
                             <div class="algorithm-grid">
                                 <div class="algorithm-item">
                                     <div class="algorithm-icon">🌳</div>
                                     <h4>Decision Tree</h4>
-                                    <p>Tree-based model for interpretable decisions</p>
+                                    <p>Simple, interpretable tree-based model</p>
                                 </div>
                                 <div class="algorithm-item">
                                     <div class="algorithm-icon">🌲</div>
                                     <h4>Random Forest</h4>
-                                    <p>Ensemble method for improved accuracy</p>
+                                    <p>Robust ensemble of decision trees</p>
+                                </div>
+                                <div class="algorithm-item" style="border: 2px solid #f39c12; border-radius: 8px; padding: 10px;">
+                                    <div class="algorithm-icon">🎄</div>
+                                    <h4>Extra Trees <span style="color:#f39c12;">★ Selected Model</span></h4>
+                                    <p>Delivered the best overall performance and is used in our live application</p>
                                 </div>
                                 <div class="algorithm-item">
                                     <div class="algorithm-icon">⚡</div>
-                                    <h4>Support Vector Machine</h4>
-                                    <p>High-dimensional pattern recognition</p>
+                                    <h4>Linear SVC</h4>
+                                    <p>Fast and efficient classification in high dimensions</p>
                                 </div>
                                 <div class="algorithm-item">
-                                    <div class="algorithm-icon">🎄</div>
-                                    <h4>Extra Trees</h4>
-                                    <p>Extremely randomized trees classifier</p>
+                                    <div class="algorithm-icon">🚀</div>
+                                    <h4>XGBoost</h4>
+                                    <p>Optimized gradient boosting framework</p>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +80,7 @@
                             </p>
                             <div class="metrics-grid">
                                 <div class="metric-item">
-                                    <div class="metric-value">99.971%</div>
+                                    <div class="metric-value">99.9705%</div>
                                     <div class="metric-label">Accuracy</div>
                                 </div>
                                 <div class="metric-item">
@@ -89,6 +94,57 @@
                                 <div class="metric-item">
                                     <div class="metric-value">94.0%</div>
                                     <div class="metric-label">F1-Score</div>
+                                </div>
+                            </div>
+                            <p style="margin-top: 10px;">
+                                After evaluation, the <strong>Extra Trees Classifier</strong> was selected for final deployment due to its superior accuracy and balanced performance across all key metrics.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h2>Fraud Detection Workflow</h2>
+                            <div class="card-icon">🔍</div>
+                        </div>
+                        <div class="card-content" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
+                            <img src="https://i.postimg.cc/qvmqhX2c/online-pays.jpg" 
+                                alt="Fraud Workflow" 
+                                style="width: 320px; max-width: 100%; border-radius: 10px; flex-shrink: 0;">
+
+                            <ol style="flex: 1; margin: 0; padding-left: 20px;  display: flex; flex-direction: column; gap: 10px;">
+                                <li><strong>Data Collection & Preprocessing:</strong> Collect transaction data, handle missing values, outliers, and encode categorical features.</li>
+                                <li><strong>Feature Engineering & Model Selection:</strong> Select relevant variables and compare multiple ML models (RFC, DTC, SVC, XGBoost, Extra Trees). <strong>ETC was finalized for deployment.</strong></li>
+                                <li><strong>Model Training & Evaluation:</strong> Train on historical data and evaluate using accuracy, precision, recall, and F1-score.</li>
+                                <li><strong>Model Deployment:</strong> Deploy the model to detect fraud in real-time and continuously improve using feedback loops.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h2>Meet the Team</h2>
+                            <div class="card-icon">👥</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="team-grid">
+                                <div class="team-member lead">
+                                    <div class="member-icon">⭐</div>
+                                    <h4>Aaryav Rastogi</h4>
+                                    <p>Team Lead<br><span class="roll">23BCE0083</span></p>
+                                </div>
+                                <div class="team-member">
+                                    <div class="member-icon">👩‍💻</div>
+                                    <h4>Vansika Jain</h4>
+                                    <p>Team Member<br><span class="roll">23BCE0100</span></p>
+                                </div>
+                                <div class="team-member">
+                                    <div class="member-icon">👨‍💻</div>
+                                    <h4>Rakshit Garg</h4>
+                                    <p>Team Member<br><span class="roll">23BCE0790</span></p>
+                                </div>
+                                <div class="team-member">
+                                    <div class="member-icon">👨‍💻</div>
+                                    <h4>Divyansh Sharma</h4>
+                                    <p>Team Member<br><span class="roll">23BCE0054</span></p>
                                 </div>
                             </div>
                         </div>

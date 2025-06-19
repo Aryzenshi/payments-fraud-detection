@@ -398,8 +398,11 @@ body {
 
 .algorithm-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .algorithm-item {
@@ -451,6 +454,54 @@ body {
   color: var(--text-muted);
   font-weight: 500;
 }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.team-member {
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.team-member h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.75rem 0 0.25rem;
+  color: var(--text-primary);
+}
+
+.team-member p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.member-icon {
+  font-size: 2rem;
+}
+
+.team-member .roll {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.team-member.lead {
+  border: 2px solid #667eea;
+  background: var(--bg-primary);
+}
+
 
 /* Animations */
 @keyframes pulse {
@@ -514,6 +565,12 @@ body {
   .hero-section {
     padding: 2rem 1rem;
   }
+
+  .algorithm-grid,
+  .metrics-grid
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 480px) {
@@ -531,7 +588,8 @@ body {
   }
 
   .algorithm-grid,
-  .metrics-grid {
+  .metrics-grid,
+  .team-grid{
     grid-template-columns: repeat(2, 1fr);
   }
 }
