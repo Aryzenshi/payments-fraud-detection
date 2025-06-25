@@ -90,4 +90,4 @@ Running on http://127.0.0.1:5000/
 
 This project is for academic and educational use.
 © 2025 Aaryav Rastogi and Team. All rights reserved.
-MIT[LICENSE]
+[MIT LICENSE](LICENSE)
