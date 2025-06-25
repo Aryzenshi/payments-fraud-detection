@@ -9,7 +9,7 @@ This project leverages machine learning techniques to detect fraudulent online t
 - 📁 **Dataset:** [Kaggle - Online Payments Fraud Detection](https://www.kaggle.com/datasets/rupakroy/online-payments-fraud-detection-dataset)
 - 📦 **Trained Model (.pkl):** [Download from Google Drive](https://drive.google.com/file/d/1H8E4WCL9HfKQqOffDv2hpnWE14ayAHGR/view?usp=sharing)
 - 🔗 **GitHub Repository:** [Aryzenshi/payments-fraud-detection](https://github.com/Aryzenshi/payments-fraud-detection)
-- 🎥 **Video Demo:** _(Coming soon)_
+- 🎥 **Video Demo:** [Video Demo](https://youtu.be/FaD7YC9v8G0)
 
 ---
 
@@ -89,15 +89,5 @@ Running on http://127.0.0.1:5000/
 ## 📄 License
 
 This project is for academic and educational use.
-© 2024 Aaryav Rastogi and Team. All rights reserved.
-
-```
-
----
-
-### ✅ Next Steps
-- Replace `https://drive.google.com/your-model-link-here` with your actual `.pkl` model's public Drive link.
-- Insert your **video documentation link** if available.
-
-Would you like this saved as a downloadable `README.md` file?
-```
+© 2025 Aaryav Rastogi and Team. All rights reserved.
+MIT[LICENSE]
