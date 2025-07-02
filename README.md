@@ -10,6 +10,7 @@ This project leverages machine learning techniques to detect fraudulent online t
 - 📦 **Trained Model (.pkl):** [Download from Google Drive](https://drive.google.com/file/d/1H8E4WCL9HfKQqOffDv2hpnWE14ayAHGR/view?usp=sharing)
 - 🔗 **GitHub Repository:** [Aryzenshi/payments-fraud-detection](https://github.com/Aryzenshi/payments-fraud-detection)
 - 🎥 **Video Demo:** [Video Demo](https://youtu.be/FaD7YC9v8G0)
+- 🎥 **Video Demo (4 mins):** [Video Demo - 4 mins](https://youtu.be/pUcktFQPqXY)
 
 ---
 
