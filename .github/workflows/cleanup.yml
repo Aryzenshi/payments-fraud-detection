@@ -1,4 +1,4 @@
-name: 🧹 Delete GitHub Deployments & Environment
+name: 🧹 Deactivate GitHub Deployments
 
 on:
   workflow_dispatch:
