@@ -1,0 +1,14 @@
+name: 🧹 Delete GitHub Deployments & Environment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: strumwolf/delete-deployment-environment@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: Production
+          onlyRemoveDeployments: true
