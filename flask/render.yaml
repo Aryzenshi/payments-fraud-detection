@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: fraud-api
+    runtime: python
+    buildCommand: pip install -r flask/requirements.txt
+    startCommand: gunicorn app:app
+    workingDirectory: flask
+    envVars:
+      - key: ENV
+        value: production
